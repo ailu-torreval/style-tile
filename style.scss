@@ -10,8 +10,7 @@ $body-font: "Montserrat", sans-serif;
 $sec-font: system-ui;
 $card-border: 10px;
 $card-shadow: 1px 1px 8px rgba(0, 0, 0, 0.548);
-$hov-card-sh: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-rgba(0, 0, 0, 0.23) 0px 6px 6px;
+$hov-card-sh: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 $dark-bg: #141313;
 $dark-poster: #312f2f;
 $grey200: rgb(146, 143, 143);
@@ -46,6 +45,10 @@ img {
 
 .grainy {
   background-image: $grainy;
+}
+
+button {
+  cursor: pointer;
 }
 
 .banner {
@@ -326,7 +329,7 @@ img {
     color: white;
     font-family: $sec-font;
     border-radius: $card-border;
-    box-shadow:$card-shadow;
+    box-shadow: $card-shadow;
     position: relative;
     background: $dark-poster;
     margin-top: 1rem;
@@ -495,8 +498,7 @@ img {
   &:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgb(0, 0, 0)),
       url("https://faellestival.dk/wp/wp-content/uploads/2018/09/cropped-MG_8034-1.jpg");
-      box-shadow: $hov-card-sh;
-
+    box-shadow: $hov-card-sh;
   }
   &:hover h1 {
     opacity: 1;
